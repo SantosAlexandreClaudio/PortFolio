@@ -10,3 +10,15 @@ menuMobile.addEventListener("click", () => {
   body.classList.toggle("menu-nav-active");
 });
 
+/* Fechar tela menu quando clicar no item e mudar o icone pra list */
+
+const navItem = document.querySelectorAll('.nav-item')
+
+navItem.forEach(item => {
+    item.addEventListener("click", () => {
+        if (body.classList.contains("menu-nav-active")) {
+            body.classList.remove("menu-nav-active")
+            menuMobile.classList
+        }
+    })
+})
