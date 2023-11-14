@@ -152,10 +152,10 @@
                             <div class="col-md-6">
                                 <ul class="list-group list-group-flush fs-5">
                                     <li class="list-group-item">
-                                        Niver: <span class="fw-lighter">28 de Novembro</span>
+                                        Aniversario: <span class="fw-lighter">28 de Novembro</span>
                                     </li>
                                     <li class="list-group-item">
-                                        Nascionali: <span class="fw-lighter">Brasileiro</span>
+                                        Nascionalidade: <span class="fw-lighter">Brasileiro</span>
                                     </li>
                                     <li class="list-group-item">
                                         Cidade: <span class="fw-lighter">Rio de Janeiro-RJ</span>
@@ -180,7 +180,7 @@
                             </div>
                         </div>
     
-                       <p>"A mente que se abre para uma nova idéia nunca voltará ao mesmo tamanho"
+                       <p>"A mente que se abre para uma nova idéia nunca voltará ao mesmo tamanho."
                         </p>
     
                     </div>
@@ -547,8 +547,15 @@
                             
                                     <div class="col-12 d-flex justify-content-center mt-4">
                                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
-                                        <button type="submit" class="btn btn-primary" data-button>Enviar mensagem</button>
+                                        <button id='btn-enviar' type="submit" class="btn btn-primary" data-button>Enviar mensagem</button>
+                                        
+                                        <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                            <span role="status">Enviando...</span>
+                                        </button>
+
                                     </div>
+          
                                 </form>
                             </div>
                         </div>
@@ -559,7 +566,15 @@
             </section>
         </main>
 
+        <footer id="footer">
+            <div class="container">
+                <div class="text-center">
+                    &copy; copyright <strong>Claudio Alexandre</strong>
+                </div>
+            </div>
+        </footer>
 
+  
         <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/static/script.js"></script>
     </body>
