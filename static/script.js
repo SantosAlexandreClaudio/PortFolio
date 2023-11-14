@@ -15,10 +15,35 @@ menuMobile.addEventListener("click", () => {
 const navItem = document.querySelectorAll('.nav-item')
 
 navItem.forEach(item => {
-    item.addEventListener("click", () => {
-        if (body.classList.contains("menu-nav-active")) {
-            body.classList.remove("menu-nav-active")
-            menuMobile.classList
-        }
-    })
+  item.addEventListener("click", () => {
+    if (body.classList.contains("menu-nav-active")) {
+      body.classList.remove("menu-nav-active")
+      menuMobile.classList.replace("bi-x", "bi-list");
+    }
+  })
 })
+
+/* Anima os itens com atributo data-anime */
+
+const items = document.querySelectorAll("[data-anime]");
+
+const animeScroll = () => {
+  const windowTop = window.myObserver + window.innerHeight * 0.85 ;
+  
+  item.forEach((element) => {
+    if (windowTop > element.offsetTop) {
+      element.classList.add("animate");
+    } else {
+      element.classList.remove("animate");
+    }
+  });
+
+};
+
+animeScroll();
+
+window.addEventListener("scroll", ()=>{
+  animeScroll();
+})
+
+
