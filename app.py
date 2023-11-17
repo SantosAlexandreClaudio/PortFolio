@@ -30,7 +30,7 @@ def index():
 
 @app.route('/send', methods=['GET', 'POST'])
 def send():
-    if request.methods == 'POST':
+    if request.method == 'POST':
         formContato = Contato(
             request.form["nome"],
             request.form["email"],
